@@ -19,7 +19,7 @@ class HomeScreen extends StatelessWidget {
               onTap: (snap) {},
               mainButton: TextButton(
                 onPressed: () {},
-                child: Text('Click'),
+                child: const Text('Click'),
               ),
               icon: const Icon(Icons.add),
               backgroundColor: const Color.fromARGB(255, 54, 76, 244),

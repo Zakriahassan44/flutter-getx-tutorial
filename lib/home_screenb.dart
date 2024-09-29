@@ -19,8 +19,8 @@ class HomeScreenB extends StatelessWidget {
               onTap: () {
                 Get.defaultDialog(
                     title: 'Delete chart',
-                    titlePadding: EdgeInsets.only(top: 20),
-                    contentPadding: EdgeInsets.all(20),
+                    titlePadding: const EdgeInsets.only(top: 20),
+                    contentPadding: const EdgeInsets.all(20),
                     middleText: 'Are you sure to want to delete ',
                     // textConfirm: 'yes',
                     // textCancel: 'no',
@@ -29,13 +29,13 @@ class HomeScreenB extends StatelessWidget {
                         Navigator.pop(context);
                         Get.back();
                       },
-                      child: Text('ok'),
+                      child: const Text('ok'),
                     ),
                     cancel: TextButton(
                       onPressed: () {},
-                      child: Text('cancel'),
+                      child: const Text('cancel'),
                     ),
-                    content: Column(
+                    content: const Column(
                       children: [
                         Text('cancel'),
                         Text('cancel'),
@@ -56,15 +56,15 @@ class HomeScreenB extends StatelessWidget {
                   child: Column(
                     children: [
                       ListTile(
-                        leading: Icon(Icons.light_mode),
-                        title: Text('light theame'),
+                        leading: const Icon(Icons.light_mode),
+                        title: const Text('light theame'),
                         onTap: () {
                           Get.changeTheme(ThemeData.light());
                         },
                       ),
                       ListTile(
-                        leading: Icon(Icons.dark_mode),
-                        title: Text('Dark theame'),
+                        leading: const Icon(Icons.dark_mode),
+                        title: const Text('Dark theame'),
                         onTap: () {
                           Get.changeTheme(ThemeData.dark());
                         },

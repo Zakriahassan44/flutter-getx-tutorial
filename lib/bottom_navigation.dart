@@ -10,7 +10,7 @@ class MyWidget extends StatelessWidget {
       title: "Bottom Sheet",
       home: Scaffold(
         appBar: AppBar(
-          title: Text("Bottom Sheet"),
+          title: const Text("Bottom Sheet"),
         ),
         body: Center(
           child: Column(
@@ -18,25 +18,25 @@ class MyWidget extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               ElevatedButton(
-                child: Text("Show Bottom Sheet"),
+                child: const Text("Show Bottom Sheet"),
                 onPressed: () {
                   Get.bottomSheet(
                     Wrap(
                       children: [
                         ListTile(
-                          leading: Icon(Icons.wb_sunny_outlined),
-                          title: Text("Light Theme"),
+                          leading: const Icon(Icons.wb_sunny_outlined),
+                          title: const Text("Light Theme"),
                           onTap: () => Get.changeTheme(ThemeData.light()),
                         ),
                         ListTile(
-                          leading: Icon(Icons.nightlight_round),
-                          title: Text("Dark Theme"),
+                          leading: const Icon(Icons.nightlight_round),
+                          title: const Text("Dark Theme"),
                           onTap: () => Get.changeTheme(ThemeData.dark()),
                         ),
                       ],
                     ),
                     backgroundColor: Colors.white,
-                    shape: RoundedRectangleBorder(
+                    shape: const RoundedRectangleBorder(
                       borderRadius:
                           BorderRadius.vertical(top: Radius.circular(16)),
                     ),
